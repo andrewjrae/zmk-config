@@ -115,7 +115,7 @@
                    &kp Z        &kp C         &kp Y         &kp F            &kp P              &kp X             &kp M          &kp APOS      &kp U         &kp Q
                    &lhm LALT R  &lhm LSHFT S  &lhm LCTRL T  &lhm LGUI H      &kp D              &kp L             &rhm LGUI N    &rhm LCTRL A  &rhm LSHFT I  &rhm LALT O
                    &sk LSHIFT   &kp V         &kp G         &kp K            &kp B              &kp W             &kp J          &kp COMMA     &kp DOT       &sk LSHIFT
-				 /*&            &*/           &kp ESC       &base_lt NAV SPC &hold_lt SYM ENTER &hold_lt SYM BSPC &base_lt NUM E &kp TAB    /* &             &*/
+				 /*&            &*/           &kp ESC       &base_lt NAV SPC &hold_lt SYM ENTER &base_lt SYM BSPC &base_lt NUM E &kp TAB    /* &             &*/
 			>;
 		};
 
