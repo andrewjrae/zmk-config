@@ -102,7 +102,7 @@
 
         rpt_lt: repeat_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HOLD_TAP";
+            label = "REPEAT_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -154,8 +154,8 @@
 		function_layer {
 			bindings = <
                    &trans       &trans        &trans        &trans             &trans          &trans              &trans           &trans                   &trans        &trans
-                   &kp F3       &kp F2        &kp F1        &kp F0             &kp F4          &kp F5              &kp F6           &kp F7                   &kp F8        &kp F9
-                   &trans       &kp F12       &kp F11       &kp F10            &trans          &trans              &trans           &trans                   &trans        &trans
+                   &kp F3       &kp F2        &kp F1        &kp F10            &kp F4          &kp F5              &kp F6           &kp F7                   &kp F8        &kp F9
+                   &trans       &trans        &trans        &kp F11            &trans          &trans              &kp F12          &trans                   &trans        &trans
 				 /*&            &*/           &trans        &trans             &trans          &trans              &trans           &trans /*                &             &*/
 			>;
 		};
