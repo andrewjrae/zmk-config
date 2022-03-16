@@ -122,7 +122,7 @@
 			bindings = <
                    &kp Z        &kp C         &kp Y         &kp F              &kp P              &kp X               &kp M            &kp APOS                 &kp U         &kp Q
                    &lhm LALT R  &lhm LSHFT S  &lhm LCTRL T  &lhm LGUI H        &kp D              &kp L               &rhm LGUI N      &rhm LCTRL A             &rhm LSHFT I  &rhm LALT O
-                   &sk LSHIFT   &kp V         &kp G         &kp K              &kp B              &kp W               &kp J            &key_repeat              &kp COMMA     &sk LSHIFT
+                   &sk LSHIFT   &kp V         &kp G         &kp K              &kp B              &kp W               &kp J            &kp COMMA                &key_repeat   &sk LSHIFT
 				 /*&            &*/           &kp ESC       &base_lt NAV_L SPC &base_lt SYM_L TAB &base_lt SYM_L BSPC &base_lt NUM_L E &base_lt FUN_L DOT    /* &             &*/
 			>;
 		};
