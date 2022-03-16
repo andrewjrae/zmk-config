@@ -63,7 +63,7 @@
         COMBO(minus, &kp MINUS, 33 34, 100)
 
         COMBO(equal, &kp EQUAL, 17 26, 60)
-        COMBO(enter, &kp ENTER, 12 23, 60)
+        COMBO(enter, &kp ENTER, 12 23, 100)
     };
 
     behaviors {
