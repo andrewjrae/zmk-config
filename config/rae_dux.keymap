@@ -64,6 +64,9 @@
 
         COMBO(equal, &kp EQUAL, 12 23, 100)
         COMBO(enter, &kp ENTER, 17 26, 60)
+
+        COMBO(reset_left, &bootloader, 0 1 2 3, 100)
+        COMBO(reset_right, &bootloader, 6 7 8 9, 100)
     };
 
     behaviors {
