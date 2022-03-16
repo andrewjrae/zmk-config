@@ -66,7 +66,7 @@
         COMBO(enter, &kp ENTER, 17 26, 60)
 
         COMBO(reset_left, &bootloader, 0 1 2 3, 100)
-        COMBO(reset_right, &bootloader, 6 7 8 9, 100)
+        // COMBO(reset_right, &bootloader, 6 7 8 9, 100)
     };
 
     behaviors {
@@ -147,7 +147,7 @@
 
 		nav_layer {
 			bindings = <
-                   &trans       &kp PSCRN     &kp MY_COPY   &kp MY_PSCRN       &kp MY_PASTE       &trans              &kp C_BRI_DEC    &kp C_BRI_INC            &kp VI_U      &trans
+                   &trans       &kp PSCRN     &kp MY_COPY   &kp MY_PSCRN       &kp MY_PASTE       &trans              &kp C_BRI_DEC    &kp C_BRI_INC            &kp VI_U      &bootloader
                    &kp END      &kp C_NEXT    &kp C_PP      &kp C_VOL_UP       &kp DEL            &kp LEFT            &kp DOWN         &kp UP                   &kp RIGHT     &kp HOME
                    &trans       &kp C_PREV    &kp C_MUTE    &kp C_VOL_DN       &kp UNDER          &kp VI_B            &kp PG_DN        &kp PG_UP                &kp VI_W      &trans
 				 /*&            &*/           &trans        &trans             &trans             &bt BT_PRV          &bt BT_NXT       &bt BT_CLR /*            &             &*/
