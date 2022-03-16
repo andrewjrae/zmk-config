@@ -62,8 +62,8 @@
         COMBO(underscore, &kp UNDER, 31 32, 100)
         COMBO(minus, &kp MINUS, 33 34, 100)
 
-        COMBO(equal, &kp EQUAL, 17 26, 60)
-        COMBO(enter, &kp ENTER, 12 23, 100)
+        COMBO(equal, &kp EQUAL, 12 23, 100)
+        COMBO(enter, &kp ENTER, 17 26, 60)
     };
 
     behaviors {
@@ -95,20 +95,20 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <300>;
+            quick-tap-mr = <300>;
             bindings = <&mo>, <&kp>;
         };
 
 
-        rpt_lt: repeat_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "REPEAT_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <300>;
-            bindings = <&mo>, <&key_repeat>;
-        };
+        // rpt_lt: repeat_hold_tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "REPEAT_HOLD_TAP";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <300>;
+        //     bindings = <&mo>, <&key_repeat>;
+        // };
     };
 
 	keymap {
@@ -117,46 +117,46 @@
         // RSTHD
 		rsthd_layer {
 			bindings = <
-                   &kp Z        &kp C         &kp Y         &kp F              &kp P           &kp X               &kp M            &kp APOS                 &kp U         &kp Q
-                   &lhm LALT R  &lhm LSHFT S  &lhm LCTRL T  &lhm LGUI H        &kp D           &kp L               &rhm LGUI N      &rhm LCTRL A             &rhm LSHFT I  &rhm LALT O
-                   &sk LSHIFT   &kp V         &kp G         &kp K              &kp B           &kp W               &kp J            &kp COMMA                &kp DOT       &sk LSHIFT
-				 /*&            &*/           &kp ESC       &base_lt NAV_L SPC &rpt_lt SYM_L 0 &base_lt SYM_L BSPC &base_lt NUM_L E &base_lt FUN_L TAB    /* &             &*/
+                   &kp Z        &kp C         &kp Y         &kp F              &kp P              &kp X               &kp M            &kp APOS                 &kp U         &kp Q
+                   &lhm LALT R  &lhm LSHFT S  &lhm LCTRL T  &lhm LGUI H        &kp D              &kp L               &rhm LGUI N      &rhm LCTRL A             &rhm LSHFT I  &rhm LALT O
+                   &sk LSHIFT   &kp V         &kp G         &kp K              &kp B              &kp W               &kp J            &key_repeat              &kp COMMA     &sk LSHIFT
+				 /*&            &*/           &kp ESC       &base_lt NAV_L SPC &base_lt SYM_L TAB &base_lt SYM_L BSPC &base_lt NUM_L E &base_lt FUN_L DOT    /* &             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
-                   &trans       &kp LT        &kp MINUS     &kp GT             &trans          &trans              &trans           &kp EQUAL                &trans        &trans
-                   &lhm LALT N3 &lhm LSHFT N2 &lhm LCTRL N1 &lhm LGUI N0       &kp N4          &kp N5              &rhm LGUI N6     &rhm LCTRL N7            &rhm LSHFT N8 &rhm LALT N9
-                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &trans          &trans              &trans           &kp COMMA                &kp DOT       &trans
-				 /*&            &*/           &trans        &trans             &trans          &trans              &trans           &trans    /*             &             &*/
+                   &trans       &kp LT        &kp MINUS     &kp GT             &trans             &trans              &trans           &kp EQUAL                &trans        &trans
+                   &lhm LALT N3 &lhm LSHFT N2 &lhm LCTRL N1 &lhm LGUI N0       &kp N4             &kp N5              &rhm LGUI N6     &rhm LCTRL N7            &rhm LSHFT N8 &rhm LALT N9
+                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &trans             &trans              &trans           &kp COMMA                &kp DOT       &trans
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans    /*             &             &*/
 			>;
 		};
 
 		sym_layer {
 			bindings = <
-                   &trans       &kp EXCL      &kp AT        &kp DLLR           &trans          &trans              &kp TILDE        &kp EQUAL                &kp BSLH      &trans
-                   &kp HASH     &kp LT        &kp MINUS     &kp GT             &kp GRAVE       &kp AMPS            &kp LBRC         &kp LPAR                 &kp RPAR      &kp PIPE
-                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &kp UNDER       &kp PRCNT           &kp RBRC         &kp LBKT                 &kp RBKT      &trans
-				 /*&            &*/           &trans        &trans             &trans          &trans              &trans           &trans    /*             &             &*/
+                   &trans       &kp EXCL      &kp AT        &kp DLLR           &trans             &trans              &kp TILDE        &kp EQUAL                &kp BSLH      &trans
+                   &kp HASH     &kp LT        &kp MINUS     &kp GT             &kp GRAVE          &kp AMPS            &kp LBRC         &kp LPAR                 &kp RPAR      &kp PIPE
+                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &kp UNDER          &kp PRCNT           &kp RBRC         &kp LBKT                 &kp RBKT      &trans
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans    /*             &             &*/
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-                   &trans       &kp PSCRN     &kp MY_COPY   &kp MY_PSCRN       &kp MY_PASTE    &trans              &kp C_BRI_DEC    &kp C_BRI_INC            &kp VI_U      &trans
-                   &kp END      &kp C_NEXT    &kp C_PP      &kp C_VOL_UP       &kp DEL         &kp LEFT            &kp DOWN         &kp UP                   &kp RIGHT     &kp HOME
-                   &trans       &kp C_PREV    &kp C_MUTE    &kp C_VOL_DN       &kp UNDER       &kp VI_B            &kp PG_DN        &kp PG_UP                &kp VI_W      &trans
-				 /*&            &*/           &trans        &trans             &trans          &bt BT_PRV          &bt BT_NXT       &bt BT_CLR /*            &             &*/
+                   &trans       &kp PSCRN     &kp MY_COPY   &kp MY_PSCRN       &kp MY_PASTE       &trans              &kp C_BRI_DEC    &kp C_BRI_INC            &kp VI_U      &trans
+                   &kp END      &kp C_NEXT    &kp C_PP      &kp C_VOL_UP       &kp DEL            &kp LEFT            &kp DOWN         &kp UP                   &kp RIGHT     &kp HOME
+                   &trans       &kp C_PREV    &kp C_MUTE    &kp C_VOL_DN       &kp UNDER          &kp VI_B            &kp PG_DN        &kp PG_UP                &kp VI_W      &trans
+				 /*&            &*/           &trans        &trans             &trans             &bt BT_PRV          &bt BT_NXT       &bt BT_CLR /*            &             &*/
 			>;
 		};
 
 		function_layer {
 			bindings = <
-                   &trans       &trans        &trans        &trans             &trans          &trans              &trans           &trans                   &trans        &trans
-                   &kp F3       &kp F2        &kp F1        &kp F10            &kp F4          &kp F5              &kp F6           &kp F7                   &kp F8        &kp F9
-                   &trans       &trans        &trans        &kp F11            &trans          &trans              &kp F12          &trans                   &trans        &trans
-				 /*&            &*/           &trans        &trans             &trans          &trans              &trans           &trans /*                &             &*/
+                   &trans       &trans        &trans        &trans             &trans             &trans              &trans           &trans                   &trans        &trans
+                   &kp F3       &kp F2        &kp F1        &kp F10            &kp F4             &kp F5              &kp F6           &kp F7                   &kp F8        &kp F9
+                   &trans       &trans        &trans        &kp F11            &trans             &trans              &kp F12          &trans                   &trans        &trans
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans /*                &             &*/
 			>;
 		};
 	};
