@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: ajrae
+      url-base: https://github.com/ajrae
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: ajrae
+      revision: global-quick-tap
       import: app/west.yml
   self:
     path: config
