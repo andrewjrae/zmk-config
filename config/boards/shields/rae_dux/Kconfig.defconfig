@@ -1,6 +1,8 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+CONFIG_BUILD_OUTPUT_UF2=y
+
 if SHIELD_RAE_DUX_LEFT
 
 config ZMK_KEYBOARD_NAME

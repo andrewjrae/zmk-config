@@ -58,8 +58,8 @@
         COMBO(semicolon, &kp SEMI, 27 28, 60)
         COMBO(slash, &kp FSLH, 1 2, 60)
 
-        COMBO(underscore, &kp UNDER, 31 32, 100)
-        COMBO(minus, &kp MINUS, 33 34, 100)
+        COMBO(minus, &kp MINUS, 31 32, 100)
+        COMBO(underscore, &kp UNDER, 33 34, 100)
 
         COMBO(equal, &kp EQUAL, 12 23, 100)
         COMBO(enter, &kp ENTER, 17 26, 60)
@@ -75,7 +75,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
             // hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33 34 35>;
@@ -88,7 +88,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
             // hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
