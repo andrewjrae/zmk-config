@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: andrewjrae
-      revision: global-quick-tap
+      revision: andrewjrae
       import: app/west.yml
   self:
     path: config
